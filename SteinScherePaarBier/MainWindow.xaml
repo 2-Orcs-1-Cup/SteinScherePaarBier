@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SteinScherePaarBier"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="0,0,0,-79" HorizontalAlignment="Left" Width="800" Background="#FFC9BEBE">
+    <Grid HorizontalAlignment="Right" Width="800" Background="#FFC9BEBE" Margin="0,0,0,-79">
         <Label x:Name="lblTitel" Content="Stein / Schere / Paar Bier" HorizontalAlignment="Center" Margin="0,19,0,0" VerticalAlignment="Top" Width="556" FontFamily="Comic Sans MS" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center"/>
         <Border x:Name="frmSpieler" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="231" Margin="40,160,0,0" VerticalAlignment="Top" Width="298"/>
         <Label x:Name="lblSpieler" Content="Spieler" HorizontalAlignment="Left" Margin="40,116,0,0" VerticalAlignment="Top" Width="123" FontFamily="Comic Sans MS" FontSize="14"/>
@@ -33,7 +33,7 @@
             </Grid>
         </Border>
         <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Height="54" Width="76" Background="#FF48A83E"/>
-        <TextBlock x:Name="tb_TextBlockKommunikation" HorizontalAlignment="Center" Height="160" Margin="0,231,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" Background="#FFF1E4E4"/>
+        <TextBlock x:Name="tb_TextBlockKommunikation" HorizontalAlignment="Center" Height="160" Margin="0,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" Background="#FFF1E4E4" FontFamily="Comic Sans MS"><Run Language="de-de" Text="Ausgabe an Anwender"/></TextBlock>
         <Label x:Name="lblSpielerPunkte" Content="" HorizontalAlignment="Left" Margin="288,116,0,0" VerticalAlignment="Top" Width="50" FontFamily="Comic Sans MS" FontSize="14" BorderThickness="2,2,2,2" BorderBrush="Black"/>
         <Label x:Name="lblComputerPunkte" Content="" HorizontalAlignment="Left" Margin="710,116,0,0" VerticalAlignment="Top" Width="50" FontFamily="Comic Sans MS" FontSize="14" BorderThickness="2,2,2,2" BorderBrush="Black"/>
 

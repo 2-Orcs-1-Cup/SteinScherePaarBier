@@ -23,6 +23,7 @@ namespace SteinScherePaarBier
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }
