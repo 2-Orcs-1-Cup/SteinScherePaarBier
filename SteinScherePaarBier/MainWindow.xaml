@@ -10,29 +10,105 @@
         <Label x:Name="lblTitel" Content="Stein / Schere / Paar Bier" HorizontalAlignment="Center" Margin="0,19,0,0" VerticalAlignment="Top" Width="556" FontFamily="Comic Sans MS" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center"/>
         <Border x:Name="frmSpieler" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="231" Margin="40,160,0,0" VerticalAlignment="Top" Width="298"/>
         <Label x:Name="lblSpieler" Content="Spieler" HorizontalAlignment="Left" Margin="40,116,0,0" VerticalAlignment="Top" Width="123" FontFamily="Comic Sans MS" FontSize="14"/>
-        <Border x:Name="frmComputer" BorderThickness="1" BorderBrush="Black" Height="231" Margin="462,160,40,0" VerticalAlignment="Top"/>
+        <Border x:Name="frmComputer" BorderThickness="1" BorderBrush="Black" Height="231" Margin="462,160,40,0" VerticalAlignment="Top">
+            <Grid RenderTransformOrigin="0.5,0.5" Margin="28,24,28,145">
+
+                <Button x:Name="btnSpielerStein1" VerticalAlignment="Center" Height="60" FontFamily="Comic Sans MS" Margin="0,0,180,0" Background="#FF48A83E">
+                    <Image Source="C:\Users\Tino.Scherm\OneDrive - Dr. Robert Eckert Schulen AG\Notizen\C#\VS\SteinScherePaarBier\SteinScherePaarBier\Bilder\Stein.png" Height="44" Width="57" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.1" ScaleY="1.4"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+
+
+                <Button x:Name="btnSpielerSchere1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="60" Width="60" FontFamily="Comic Sans MS" Background="#FF48A83E" >
+                    <Image Source="C:\Users\Tino.Scherm\OneDrive - Dr. Robert Eckert Schulen AG\Notizen\C#\VS\SteinScherePaarBier\SteinScherePaarBier\Bilder\Schere.png" Height="44" Width="57" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.4"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+
+                <Button x:Name="btnSpielerPapier1" HorizontalAlignment="Left" Margin="180,0,0,0" VerticalAlignment="Center" Height="60" Width="60" FontFamily="Comic Sans MS" Background="#FF48A83E">
+                    <Image Source="C:\Users\Tino.Scherm\OneDrive - Dr. Robert Eckert Schulen AG\Notizen\C#\VS\SteinScherePaarBier\SteinScherePaarBier\Bilder\Papier.png" Height="44" Width="57" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.9" ScaleY="1.4"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+
+            </Grid>
+        </Border>
         <Label x:Name="lblComputer" Content="Computer" HorizontalAlignment="Left" Margin="464,116,0,0" VerticalAlignment="Top" Width="123" FontFamily="Comic Sans MS" FontSize="14"/>
-        <Border HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Margin="69,184,0,0">
-            <Grid>
-                <Button x:Name="btnSpielerStein" Content="Stein" VerticalAlignment="Center" Height="60" FontFamily="Comic Sans MS" Margin="0,0,180,0" Background="#FF48A83E"/>
-                <Button x:Name="btnSpielerSchere" Content="Schere" HorizontalAlignment="Center" VerticalAlignment="Center" Height="60" Width="60" FontFamily="Comic Sans MS" Background="#FF48A83E"/>
-                <Button x:Name="btnSpielerPapier" Content="Paar Bier" HorizontalAlignment="Left" Margin="180,0,0,0" VerticalAlignment="Center" Height="60" Width="60" FontFamily="Comic Sans MS" Background="#FF48A83E"/>
-                <Button x:Name="btnSpielerPapier_Copy1" Content="Paar Bier" HorizontalAlignment="Left" Margin="611,-5,0,0" VerticalAlignment="Top" Height="60" Width="60" FontFamily="Comic Sans MS"/>
+        <Border HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Margin="69,184,0,0" >
+            <Grid RenderTransformOrigin="0.5,0.5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="119*"/>
+                    <ColumnDefinition Width="121*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnSpielerStein" VerticalAlignment="Center" Height="60" FontFamily="Comic Sans MS" Margin="0,0,59,0" Background="#FF48A83E">
+                    <Image Source="C:\Users\Tino.Scherm\OneDrive - Dr. Robert Eckert Schulen AG\Notizen\C#\VS\SteinScherePaarBier\SteinScherePaarBier\Bilder\Stein.png" Height="44" Width="57" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.1" ScaleY="1.4"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+
+
+                <Button x:Name="btnSpielerSchere" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60" Width="60" FontFamily="Comic Sans MS" Background="#FF48A83E" Grid.ColumnSpan="2" Margin="90,0,0,0" >
+                    <Image Source="C:\Users\Tino.Scherm\OneDrive - Dr. Robert Eckert Schulen AG\Notizen\C#\VS\SteinScherePaarBier\SteinScherePaarBier\Bilder\Schere.png" Height="44" Width="57" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.2" ScaleY="1.4"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+
+                <Button x:Name="btnSpielerPapier" HorizontalAlignment="Left" Margin="61,0,0,0" VerticalAlignment="Center" Height="60" Width="60" FontFamily="Comic Sans MS" Background="#FF48A83E" Grid.Column="1">
+                    <Image Source="C:\Users\Tino.Scherm\OneDrive - Dr. Robert Eckert Schulen AG\Notizen\C#\VS\SteinScherePaarBier\SteinScherePaarBier\Bilder\Papier.png" Height="44" Width="57" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1.9" ScaleY="1.4"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
 
             </Grid>
         </Border>
         <Border VerticalAlignment="Top" Margin="491,184,69,0">
-            <Grid HorizontalAlignment="Center" Width="240">
-                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="240">
-                    <Button x:Name="btnComputerStein" Content="Stein" HorizontalAlignment="Left" VerticalAlignment="Center" Height="60" Width="60" FontFamily="Comic Sans MS" Background="#FF48A83E"/>
-                    <Button x:Name="btnComputerSchere" Content="Schere" HorizontalAlignment="Center" VerticalAlignment="Center" Height="60" Width="60" FontFamily="Comic Sans MS" Background="#FF48A83E"/>
-                    <Button x:Name="btnComputerPapier" Content="Paar Bier" VerticalAlignment="Center" Height="60" FontFamily="Comic Sans MS" HorizontalAlignment="Right" Width="60" Background="#FF48A83E"/>
-
-                </Grid>
-
-            </Grid>
+            <Grid HorizontalAlignment="Center" Width="240"/>
         </Border>
-        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Height="54" Width="76" Background="#FF48A83E"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Height="54" Width="76" Background="#FF48A83E" Click="btnStart_Click"/>
         <TextBlock x:Name="tb_TextBlockKommunikation" HorizontalAlignment="Center" Height="160" Margin="0,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" Background="#FFF1E4E4" FontFamily="Comic Sans MS"><Run Language="de-de" Text="Ausgabe an Anwender"/></TextBlock>
         <Label x:Name="lblSpielerPunkte" Content="" HorizontalAlignment="Left" Margin="288,116,0,0" VerticalAlignment="Top" Width="50" FontFamily="Comic Sans MS" FontSize="14" BorderThickness="2,2,2,2" BorderBrush="Black"/>
         <Label x:Name="lblComputerPunkte" Content="" HorizontalAlignment="Left" Margin="710,116,0,0" VerticalAlignment="Top" Width="50" FontFamily="Comic Sans MS" FontSize="14" BorderThickness="2,2,2,2" BorderBrush="Black"/>
